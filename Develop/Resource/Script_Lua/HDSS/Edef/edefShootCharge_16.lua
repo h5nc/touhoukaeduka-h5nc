@@ -121,7 +121,7 @@ function Edef_ShootChargeEnemyEID_16_3_C(playerindex, level, x, y, timer, px, py
 		local aimangle = hdss.Get(HDSS_ENAIMANGLE, playerindex);
 		hdss.Call(HDSS_BEB,
 			{
-				playerindex, x, y, aimangle, 0.1, CC_Bullet_ShuttleBeam, 4, 512, 96, BEAMFLAG_HS, 32, 96
+				playerindex, x, y, aimangle, 0.1, CC_Bullet_ShuttleBeam, 4, 512, 96, BEAMFLAG_HS, 54, 96
 			}
 		)
 	end

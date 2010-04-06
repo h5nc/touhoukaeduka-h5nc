@@ -64,14 +64,19 @@ function Edef_SendExChase_09(playerindex, rank, x, y, timer, px, py)
 				addangle, 0, 0, 0xffff
 			}
 		)
-	elseif math.mod(timer, 9) == 0 then
+	elseif math.mod(timer, 10) == 0 then
 		local angle = hdss.Get(HDSS_ENANGLE, playerindex) + 9000;
 		hdssA(playerindex,
 			{
 				TIMERRANGE, 40, 90, SPEEDSETADD, 5
 			}
 		)
-		hdssBC(playerindex, 2, angle, 3, x, y, 0, CC_Bullet_Scale, 6);
+		hdss.Call(
+			HDSS_BC,
+			{
+				playerindex, 2, angle, 3, x, y, 0, CC_Bullet_Scale, 6, 8, 24
+			}
+		)
 		hdssA(playerindex);
 	end
 	return true;

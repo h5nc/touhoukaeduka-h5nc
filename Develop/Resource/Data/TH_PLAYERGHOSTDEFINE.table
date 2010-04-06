@@ -25,7 +25,7 @@ Comment	Index	SIID	XAdj	YAdj	Speed	Flag	RollTime	ShootAngle	MoveR	StartAngle	Ble
 -	37	SI_PlayerGhost_04_01	5	15	0	44	20	-16	0	0	2
 #		Yuyuko									
 -	40	SI_PlayerGhost_05_01	0	0	3.5	114	0	0	0	0	2
--	44	SI_PlayerGhost_05_01	0	0	0	214	0	0	0	0	2
+-	44	SI_PlayerGhost_05_01	0	0	0	114	0	0	0	0	2
 #		Medicine									
 -	48	SI_Null	0	0	0	0	0	0	0	0	2
 -	52	SI_Null	0	0	0	0	0	0	0	0	2
@@ -36,10 +36,10 @@ Comment	Index	SIID	XAdj	YAdj	Speed	Flag	RollTime	ShootAngle	MoveR	StartAngle	Ble
 -	64	SI_PlayerGhost_08_01	0	-25	0	2001	0	0	0	0	2
 -	68	SI_PlayerGhost_08_01	0	15	0	2001	0	0	0	0	2
 #		Mystia									
--	72	SI_PlayerGhost_09_01	-15	0	0	54	7	-128	0	0	2
--	73	SI_PlayerGhost_09_01	15	0	0	54	7	128	0	0	2
--	76	SI_PlayerGhost_09_01	-5	15	0	54	7	-128	0	0	2
--	77	SI_PlayerGhost_09_01	5	15	0	54	7	128	0	0	2
+-	72	SI_PlayerGhost_09_01	-15	0	0	54	7	-360	0	0	2
+-	73	SI_PlayerGhost_09_01	15	0	0	54	7	360	0	0	2
+-	76	SI_PlayerGhost_09_01	-5	15	0	54	7	-360	0	0	2
+-	77	SI_PlayerGhost_09_01	5	15	0	54	7	360	0	0	2
 #		Marlin									
 -	80	SI_PlayerGhost_10_01	-32	0	0	2	0	2000	0	0	2
 -	81	SI_PlayerGhost_10_01	32	0	0	2	0	-2000	0	0	2
@@ -66,10 +66,10 @@ Comment	Index	SIID	XAdj	YAdj	Speed	Flag	RollTime	ShootAngle	MoveR	StartAngle	Ble
 -	112	SI_Null	0	0	0	0	0	0	0	0	2
 -	116	SI_Null	0	0	0	0	0	0	0	0	2
 #		Alice									
--	120	SI_PlayerGhost_15_01	-15	0	0	2	0	0	0	0	2
--	121	SI_PlayerGhost_15_01	15	0	0	2	0	0	0	0	2
--	124	SI_PlayerGhost_15_01	-5	15	0	2	0	0	0	0	2
--	125	SI_PlayerGhost_15_01	5	15	0	2	0	0	0	0	2
+-	120	SI_PlayerGhost_15_01	-32	16	0	2	0	0	0	0	2
+-	121	SI_PlayerGhost_15_01	32	16	0	2	0	0	0	0	2
+-	124	SI_PlayerGhost_15_01	-16	16	0	2	0	0	0	0	2
+-	125	SI_PlayerGhost_15_01	16	16	0	2	0	0	0	0	2
 #		Yamaxanadu									
 -	128	SI_PlayerGhost_16_01	-25	0	0	10	0	0	0	0	2
 -	129	SI_PlayerGhost_16_01	25	0	0	10	0	0	0	0	2
@@ -83,14 +83,14 @@ Comment	Index	SIID	XAdj	YAdj	Speed	Flag	RollTime	ShootAngle	MoveR	StartAngle	Ble
 -	136	SI_Null	0	0	0	0	0	0	0	0	2
 -	140	SI_Null	0	0	0	0	0	0	0	0	2
 #		Remilia									
--	144	SI_PlayerGhost_18_01	-15	-32	0	10	0	0	0	0	2
--	145	SI_PlayerGhost_18_01	15	-32	0	10	0	0	0	0	2
--	146	SI_PlayerGhost_18_02	-15	-32	0	2	0	0	0	0	2
--	147	SI_PlayerGhost_18_02	15	-32	0	2	0	0	0	0	2
--	148	SI_PlayerGhost_18_01	0	0	0	210	0	0	0	0	2
--	149	SI_PlayerGhost_18_01	0	0	0	210	0	0	0	0	2
--	150	SI_PlayerGhost_18_02	0	0	0	202	0	0	0	0	2
--	151	SI_PlayerGhost_18_02	0	0	0	202	0	0	0	0	2
+-	144	SI_PlayerGhost_18_01	-15	-32	0	2010	0	0	0	0	2
+-	145	SI_PlayerGhost_18_01	15	-32	0	2010	0	0	0	0	2
+-	146	SI_PlayerGhost_18_02	-15	-32	0	2002	0	0	0	0	2
+-	147	SI_PlayerGhost_18_02	15	-32	0	2002	0	0	0	0	2
+-	148	SI_PlayerGhost_18_01	-32	0	0	10	0	0	0	0	2
+-	149	SI_PlayerGhost_18_01	32	0	0	10	0	0	0	0	2
+-	150	SI_PlayerGhost_18_02	-32	0	0	2	0	0	0	0	2
+-	151	SI_PlayerGhost_18_02	32	0	0	2	0	0	0	0	2
 #		ReimuII									
 -	152	SI_PlayerGhost_19_01	0	0	2.5	10	0	0	24	0	2
 -	153	SI_PlayerGhost_19_01	0	0	2.5	30	0	0	24	18000	2

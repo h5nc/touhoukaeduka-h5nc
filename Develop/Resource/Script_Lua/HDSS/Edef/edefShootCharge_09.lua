@@ -3,13 +3,13 @@ function Edef_ShootChargeEnemyEID_09_1(playerindex, level, x, y, timer, px, py)
 	if level > 10 then
 		nway = 6;
 	end
-	if math.mod(timer, 3) == 0 then
+	if math.mod(timer, 4) == 0 then
 		hdssA(playerindex,
 			{
 				TIMERRANGE, 40-level, 90, SPEEDSETADD, nway
 			}
 		)
-		local nowindex = timer / 3;
+		local nowindex = timer / 4;
 		for i=0, nway-1 do
 			local leftrightindi = math.mod(i, 2) * 2 - 1;
 			local angle = hdss.Get(HDSS_ENAIMANGLE, playerindex) + (nowindex * 927 + i * (36000 / nway)) * leftrightindi;
@@ -17,7 +17,7 @@ function Edef_ShootChargeEnemyEID_09_1(playerindex, level, x, y, timer, px, py)
 			if math.mod(nowindex, 2) == 0 then
 				type = CC_Bullet_SmallBall;
 			end
-			hdssB(playerindex, x, y, angle, 0, type, 2);
+			hdssB(playerindex, x, y, angle, 0, type, 2, 8, 24);
 		end
 		hdssA(playerindex);
 	end
@@ -29,17 +29,17 @@ function Edef_ShootChargeEnemyEID_09_2(playerindex, level, x, y, timer, px, py)
 	if level > 10 then
 		nway = 6;
 	end
-	if math.mod(timer, 6) == 0 then
+	if math.mod(timer, 8) == 0 then
 		hdssA(playerindex,
 			{
 				TIMERRANGE, 40-level, 90, SPEEDSETADD, nway
 			}
 		)
-		local nowindex = timer / 6;
+		local nowindex = timer / 8;
 		for i=0, nway-1 do
 			local leftrightindi = math.mod(i, 2) * 2 - 1;
 			local angle = hdss.Get(HDSS_ENAIMANGLE, playerindex) + (nowindex * 927 + i * (36000 / nway)) * leftrightindi;
-			hdssB(playerindex, x, y, angle, 0, CC_Bullet_Scale, 2);
+			hdssB(playerindex, x, y, angle, 0, CC_Bullet_Scale, 2, 8, 24);
 		end
 		hdssA(playerindex);
 	end
@@ -89,8 +89,8 @@ function Edef_ShootChargeEnemyEID_09_3_A(playerindex, level, x, y, timer, px, py
 --	if _ePlayerShootCharge_CheckBoss(playerindex) then
 --		return true;
 --	end
-	if math.mod(timer, 6) == 0 then
-		local nowindex = timer / 6;
+	if math.mod(timer, 8) == 0 then
+		local nowindex = timer / 8;
 		local aimangle = hdss.Get(HDSS_ENAIMANGLE, playerindex);
 		local leftrightindi = math.mod(aimangle, 2) * 2 - 1;
 		local angle = hdss.Get(HDSS_ENAIMANGLE, playerindex) + (nowindex * 927) * leftrightindi;
@@ -103,7 +103,7 @@ function Edef_ShootChargeEnemyEID_09_3_A(playerindex, level, x, y, timer, px, py
 				TIMERRANGE, 40-level, 90, SPEEDSETADD, 5
 			}
 		)
-		hdssB(playerindex, x, y, angle, 0, type, 2);
+		hdssB(playerindex, x, y, angle, 0, type, 2, 8, 24);
 		hdssA(playerindex);
 	end
 	return true;
@@ -156,7 +156,7 @@ function Edef_ShootChargeEnemyEID_09_3_C(playerindex, level, x, y, timer, px, py
 				TIMERRANGE, 40-level, 90, SPEEDSETADD, 5
 			}
 		)
-		hdssB(playerindex, x, y, angle, 0, type, 2);
+		hdssB(playerindex, x, y, angle, 0, type, 2, 8, 24);
 		hdssA(playerindex);
 	end
 	return true;

@@ -1,7 +1,7 @@
 function ePlayerDrain_00(playerindex, x, y, draintimer, type)
 	
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -24,7 +24,7 @@ end
 function ePlayerDrain_01(playerindex, x, y, draintimer, type)
 
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -51,7 +51,7 @@ end
 function ePlayerDrain_02(playerindex, x, y, draintimer, type)
 	
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -173,7 +173,7 @@ end
 function ePlayerDrain_03(playerindex, x, y, draintimer, type)
 	
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -195,7 +195,7 @@ end
 function ePlayerDrain_04(playerindex, x, y, draintimer, type)
 	
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -236,13 +236,13 @@ end
 
 function ePlayerDrain_05(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.3125, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel/2, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
 	
 	local cenx = x;
-	local ceny = y-16;
+	local ceny = y-32;
 	game.SetDrainSpriteInfo(playerindex, cenx, ceny);
 
 	local rs = 48;
@@ -258,7 +258,7 @@ end
 
 function ePlayerDrain_06(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -352,7 +352,7 @@ end
 function ePlayerDrain_07(playerindex, x, y, draintimer, type)
 	
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.875, 2);
+		game.SetGhostActiveInfo(playerindex, 200, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -375,7 +375,7 @@ end
 function ePlayerDrain_08(playerindex, x, y, draintimer, type)
 	
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -398,7 +398,7 @@ end
 function ePlayerDrain_09(playerindex, x, y, draintimer, type)
 	
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -424,7 +424,7 @@ end
 function ePlayerDrain_10(playerindex, x, y, draintimer, type)
 	
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -447,7 +447,7 @@ end
 
 function ePlayerDrain_11(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -471,7 +471,7 @@ end
 
 function ePlayerDrain_12(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -496,7 +496,7 @@ end
 
 function ePlayerDrain_13(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -529,7 +529,7 @@ end
 
 function ePlayerDrain_14(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.94375, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.011796875, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -626,8 +626,7 @@ end
 
 function ePlayerDrain_15(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		local angle = hdssAMAP(playerindex, x, y);
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, angle, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -649,7 +648,7 @@ end
 
 function ePlayerDrain_16(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -671,7 +670,7 @@ end
 
 function ePlayerDrain_17(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -692,12 +691,12 @@ end
 
 function ePlayerDrain_18(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
 	
-	local hscale = 1;
+	local hscale = 0.6;
 	
 	local drainangle = hdss.Get(HDSS_D, LConst_Desc_DrainAngle+playerindex)+9000;
 	local moveangle = 0;
@@ -774,7 +773,7 @@ end
 
 function ePlayerDrain_21(playerindex, x, y, draintimer, type)
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -799,7 +798,7 @@ end
 function ePlayerDrain_22(playerindex, x, y, draintimer, type)
 
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end
@@ -846,7 +845,7 @@ end
 function ePlayerDrain_23(playerindex, x, y, draintimer, type)
 	
 	if type ~= nil then
-		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, 0.625, 2);
+		game.SetGhostActiveInfo(playerindex, 160, type+1, type+1, -9000, LConst_ActiveGhostDefaultAccel, LConst_ActiveGhostDefaultDamageRate);
 		hdssSE(SE_GHOST_ACTIVATE, x, y);
 		return true;
 	end

@@ -67,6 +67,9 @@ LConst_GhostTypeRedActive	=	LConst_GhostTypeStart + 5
 
 LConst_EnemyMergeInterval	=	16
 
+LConst_ActiveGhostDefaultDamageRate	=	20
+LConst_ActiveGhostDefaultAccel	=	0.0078125
+
 LConst_Desc_EnemyTimeCounter	=	FREEBEGIN
 LConst_Desc_EnemyRandom	=	FREEBEGIN + 2
 LConst_Desc_EnemyNowLine	=	FREEBEGIN + 4
